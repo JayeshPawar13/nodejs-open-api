@@ -1,0 +1,47 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
+  },
+  "host": "localhost:3000",
+  "basePath": "/",
+  "tags": [],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": [],
+        "description": "",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/jokes/random": {
+      "get": {
+        "tags": [
+          "Jokes"
+        ],
+        "description": "To fetch a random joke",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/public-api-list/all": {
+      "get": {
+        "tags": [
+          "Public API List"
+        ],
+        "description": "To fetch all public api",
+        "parameters": [],
+        "responses": {}
+      }
+    }
+  },
+  "definitions": {}
+}
