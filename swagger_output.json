@@ -46,7 +46,7 @@
         "tags": [
           "Post Code and Weather"
         ],
-        "description": "To fetch a weather details of specific post code",
+        "description": "To fetch a weather details of specific post code using longitude and latitude",
         "parameters": [
           {
             "name": "postCode",
@@ -70,22 +70,22 @@
         "responses": {}
       }
     },
-    "/public-api-list/all": {
-      "get": {
-        "tags": [
-          "Public API List"
-        ],
-        "description": "To fetch all public api",
-        "parameters": [],
-        "responses": {}
-      }
-    },
     "/dog-pic/random": {
       "get": {
         "tags": [
           "Dogs"
         ],
         "description": "To fetch a random dog pic",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/public-api-list/all": {
+      "get": {
+        "tags": [
+          "Public API List"
+        ],
+        "description": "To fetch all public api used in project",
         "parameters": [],
         "responses": {}
       }
