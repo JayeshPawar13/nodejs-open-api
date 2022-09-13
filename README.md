@@ -41,3 +41,12 @@ If the installation was successful, you should be able to run the following comm
   1. $ npm install (if not done in above steps)
   2. $ npm run coverage
   3. Navigate to coverage folder --> nodejs-open-api/coverage/index.html for HTML output or check console for text output
+  
+### Swagger
+  <img width="1536" alt="Screenshot 2022-09-13 at 5 52 09 PM" src="https://user-images.githubusercontent.com/76115384/189900207-4697a77f-c991-4ed0-bf78-8847ea789fad.png">
+  
+### Unit test coverage
+  <img width="1158" alt="Screenshot 2022-09-13 at 5 56 18 PM" src="https://user-images.githubusercontent.com/76115384/189900715-bdf4b4c2-1f71-4c9f-b89f-78007cfcbf52.png">
+
+
+
