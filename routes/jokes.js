@@ -8,8 +8,12 @@ const jokesController = new JokesController();
 router.get('/random', async (req, res, next) => {
   // #swagger.tags = ['Jokes']
   // #swagger.description = 'To fetch a random joke'
-  const response = await jokesController.fetchJoke();
-  res.json(response.data);
+  try {
+    const response = await jokesController.fetchJoke();
+    res.json(response.data);
+  } catch (error) {
+    res.send(error);
+  }
 });
 
 module.exports = router;

@@ -22,6 +22,44 @@
         "responses": {}
       }
     },
+    "/post-code/{postCode}": {
+      "get": {
+        "tags": [
+          "Post Code and Weather"
+        ],
+        "description": "To fetch a post code details",
+        "parameters": [
+          {
+            "name": "postCode",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Enter UK post code",
+            "default": "DN161EX"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/post-code/weather-info/{postCode}": {
+      "get": {
+        "tags": [
+          "Post Code and Weather"
+        ],
+        "description": "To fetch a weather details of specific post code",
+        "parameters": [
+          {
+            "name": "postCode",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Enter UK post code",
+            "default": "DN161EX"
+          }
+        ],
+        "responses": {}
+      }
+    },
     "/jokes/random": {
       "get": {
         "tags": [
@@ -38,6 +76,16 @@
           "Public API List"
         ],
         "description": "To fetch all public api",
+        "parameters": [],
+        "responses": {}
+      }
+    },
+    "/dog-pic/random": {
+      "get": {
+        "tags": [
+          "Dogs"
+        ],
+        "description": "To fetch a random dog pic",
         "parameters": [],
         "responses": {}
       }

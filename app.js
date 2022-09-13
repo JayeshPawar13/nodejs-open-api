@@ -9,6 +9,8 @@ const swaggerFile = require('./swagger_output.json');
 var indexRouter = require('./routes/index');
 var jokesRouter = require('./routes/jokes');
 var publicApiListRouter = require('./routes/public-api-list');
+var dogPicRouter = require('./routes/dog-pics');
+var postCodeRouter = require('./routes/postcode');
 
 var app = express();
 
@@ -23,7 +25,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/post-code', postCodeRouter);
 app.use('/jokes', jokesRouter);
+app.use('/dog-pic', dogPicRouter);
 app.use('/public-api-list', publicApiListRouter);
 
 //swagger

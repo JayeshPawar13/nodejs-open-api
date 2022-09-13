@@ -1,15 +1,11 @@
 const { default: axios } = require('axios');
+const config = require('../config');
 
-class PublicApiList {
-  async fetchAllPublicApis() {
-    try {
-      const response = await axios.get('https://api.publicapis.org/entries');
-      console.log(response);
-      return response;
-    } catch (error) {
-      console.error(error);
-    }
+class PublicApiListController {
+  fetchAllPublicApis() {
+    const response = config;
+    return response;
   }
 }
 
-module.exports = PublicApiList;
+module.exports = PublicApiListController;
