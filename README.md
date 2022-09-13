@@ -1,6 +1,3 @@
-# nodejs-open-api
-Integrations of different open api with node js
-
 # Node JS Open API Integration
 
 Integrations of different open api with Node JS and Express
@@ -35,3 +32,12 @@ If the installation was successful, you should be able to run the following comm
     8.11.0
 
 
+### Steps to run the projcet
+  1. $ npm install
+  2. $ npm start
+  3. Open http://localhost:3000/doc/ in browser for swagger
+
+### Steps to check unit testing coverage
+  1. $ npm install (if not done in above steps)
+  2. $ npm run coverage
+  3. Navigate to coverage folder --> nodejs-open-api/coverage/index.html for HTML output or check console for text output
