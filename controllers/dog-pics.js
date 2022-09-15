@@ -1,5 +1,6 @@
 const { default: axios } = require('axios');
 const config = require('../config');
+
 class DogPicsController {
   async fetchRandomDogPic() {
     try {

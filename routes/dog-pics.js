@@ -4,8 +4,8 @@ var router = express.Router();
 
 const dogPicsController = new DogPicsController();
 
-/* GET random joke */
-router.get('/random', async (req, res, next) => {
+/* GET dog pics */
+router.get('/random', async (req, res) => {
   // #swagger.tags = ['Dogs']
   // #swagger.description = 'To fetch a random dog pic'
   try {

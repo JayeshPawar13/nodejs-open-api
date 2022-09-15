@@ -5,7 +5,7 @@ var router = express.Router();
 const jokesController = new JokesController();
 
 /* GET random joke */
-router.get('/random', async (req, res, next) => {
+router.get('/random', async (req, res) => {
   // #swagger.tags = ['Jokes']
   // #swagger.description = 'To fetch a random joke'
   try {
